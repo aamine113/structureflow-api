@@ -1,0 +1,33 @@
+{
+  "name": "structureflow_api",
+  "version": "1.0.0",
+  "description": "Typescrypt CRUD API using MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "seed": "ts-node src/utils/createSeedData.ts",
+    "test": "jest --detectOpenHandles"
+  },
+  "author": "Adel Amine",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1",
+    "nodemon": "^3.1.9",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.14",
+    "@types/supertest": "^6.0.3",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.3.0"
+  }
+}

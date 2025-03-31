@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "ab345a91-bb8f-47a1-b5dd-77f76f231e8b",
+		"name": "Structureflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20847957"
+	},
+	"item": [
+		{
+			"name": "POST /Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"lambda\",\r\n    \"dateIncorporated\": \"2020-05-12T23:50:21.817Z\",\r\n    \"description\": \"lambda company\",\r\n    \"totalEmployees\": 32,\r\n    \"address\": {\r\n        \"street\": \"17 Mark Square\",\r\n        \"city\": \"Leicester\",\r\n        \"postcode\": \"LC2A 4EG\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/company"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /Company",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"lambda\",\r\n    \"dateIncorporated\": \"2020-05-12T23:50:21.817Z\",\r\n    \"description\": \"lambda company\",\r\n    \"totalEmployees\": 32,\r\n    \"address\": {\r\n        \"street\": \"17 Mark Square\",\r\n        \"city\": \"Leicester\",\r\n        \"postcode\": \"LC2A 4EG\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/company/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"company",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67e9d7122304278c553770ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /Company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/company/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"company",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67eadb0b3cba6aec9dd76732"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /AllCompany",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/company"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /AllCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/company"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /Company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/company/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"company",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "67eadb0b3cba6aec9dd76737"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
